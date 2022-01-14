@@ -157,7 +157,7 @@ body .backpic {
 }
 /* Home page styling begins here */
 #home{
-    background-image: url("homepic.jpg");
+    background-image: url("media/homepic.jpg");
     position: relative;
     bottom: .5vw;
     height: 73vw;
