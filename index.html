@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ellen Rose </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"> </script>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Ellen Rose<span></span></a></div>
+            <div class="social">
+               <a href="#"><img src="media/facebook.jpg" alt=""></a> 
+                <a href="#"><img src="media/twitter.jpg" alt=""></a>
+                <a href="#"><img src="media/instagram.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+                <button class="tablinks" onclick="openCity(event, 'Shop')">Shop</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+
+               <!--
+                <button class="tablinks" onclick="openCity(event, 'Member')">Member</button>
+                <li><a href="#booking"><span>Shout out</span></a></li> <li><a href="#About">Shop</a></li>
+                <li><a href="#Services">Members</a></li>
+                <li><a href="#home">Home</a></li>-->
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="media/pastel.jpeg" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+                </div>
+    <!-- The home page starts here -->
+    <div id="Home" class="tabcontent">
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <p>Welcome to Ellen Rose. <br> Our great selection of products will cover all of your needs, whatever and wherever they may be. Enjoy our exceptional shopping experience and contact our customer service with questions or comments. <br><a>Shop now</a> </p>
+            </div>
+            <div class="product">
+                <div class="container">
+                    <img src="media/roses.jpeg" alt="" class="image">
+                    <a href="#"><div class="overlay">Shop</div></a> 
+                    <p>White Roses <br> R450.00 </p>
+                </div>
+                <div class="container">
+                    <img src="media/botanical.jpeg" alt="" class="image">
+                    <a href="#"><div class="overlay">Shop</div></a> 
+                    <p>Botanical Bouquet <br> R500.00 </p>
+                </div>
+                <div class="container">
+                    <img src="media/sunflower.jpeg" alt="" class="image">
+                    <a href="#"><div class="overlay">Shop</div></a> 
+                    <p>Sunflower <br> R300.00 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The about me page starts here -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-content">
+                <div class="text">
+                    <div class="tittle">
+                        THE STORY OF ELLEN ROSE
+                    </div>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate unde rerum eveniet, repellendus porro laborum impedit, sint sequi ad voluptas nisi. Voluptatum autem porro numquam ipsum corporis inventore doloribus fuga.</p>
+                </div>
+                <div class="image">
+                    <img src="media/aboutpic.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <div class="container">
+    <form action="action_page.php">
+        <div class="row">
+        <div class="col-25">
+            <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="lname">Surname</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your Surname..">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+        </div>
+        <div class="row">
+        <input type="submit" value="Submit">
+        </div>
+    </form>
+    </div>
+    </div>
+
+    <div id="Shop" class="tabcontent">
+    <div class="shop">
+        <div class="product">
+            <div class="container">
+                <img src="media/roses.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>White Roses <br> R450.00 </p>
+            </div>
+            <div class="container">
+                <img src="media/botanical.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>Botanical Bouquet <br> R500.00 </p>
+            </div>
+            <div class="container">
+                <img src="media/sunflower.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>Sunflower <br> R300.00 </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="container">
+                <img src="media/roses.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>White Roses <br> R450.00 </p>
+            </div>
+            <div class="container">
+                <img src="media/botanical.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>Botanical Bouquet <br> R500.00 </p>
+            </div>
+            <div class="container">
+                <img src="media/sunflower.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>Sunflower <br> R300.00 </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="container">
+                <img src="media/roses.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>White Roses <br> R450.00 </p>
+            </div>
+            <div class="container">
+                <img src="media/botanical.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>Botanical Bouquet <br> R500.00 </p>
+            </div>
+            <div class="container">
+                <img src="media/sunflower.jpeg" alt="" class="image">
+                <a href="#"><div class="overlay">Shop</div></a> 
+                <p>Sunflower <br> R300.00 </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="Member" class="tabcontent">
+    <h3>Login/create an account </h3>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+    
+    <section class="footer">
+        <div class="maxwidth">
+            <div class="content">
+                <ul class="links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <span><li><a href="#shop">Shop</a></li></span>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#log">Become a member</a></li>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.950427821754!2d18.711475450291367!3d-34.01948338051967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4c003ddb791d%3A0xdafbdc50a102704c!2s26%20Moorhen%20St%2C%20Electric%20City%2C%20Cape%20Town%2C%207100!5e0!3m2!1sen!2sza!4v1622986694583!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

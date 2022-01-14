@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body .backpic {
+    position: fixed;
+}
+
+.max-width {
+    padding: 0 80px;
+    margin: auto;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.navbar .menu button.active {
+    color: rgb(255, 181, 44);
+    border: olive;
+}
+/* The styling of the navigation bar. */
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(160, 160, 160, 0.05);
+    opacity: 0.6;
+    font-family: "ubuntu", sans-serif;
+    transition: all 0.5 ease;
+}
+
+.navbar.sticky {
+    position: fixed;
+    padding: 19px 0;
+    background: rgba(210, 105, 30, 0.16);
+    opacity: 0.95;
+    padding: 20px;
+    z-index: 999;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu{
+    position: relative;
+    left: 2.5vw;
+    top: .8vw;
+}
+.navbar .social{
+    display: inline;
+    position: relative;
+    left: 1vw;
+}
+.navbar .social img{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 25%;
+    margin-left: 2vw;
+}
+
+.navbar .social img:hover{
+    width: 1.85vw;
+    height: 1.85vw;
+}
+.navbar .menu  button {
+    color: rgb(29, 29, 29);
+    font-size: 1.02vw;
+    font-weight: 500;
+    letter-spacing: 0.px;
+    transition: color 0.4s ease-out;
+}
+
+.navbar .menu button:hover {
+    text-decoration: none;
+    color: rgb(150, 142, 142);
+}
+
+.navbar.sticky .menu button:hover {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+.menu-btn {
+    color: black;
+    font-size: 17px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .logo a {
+    position: relative;
+    right: 92%;
+    color: rgb(48, 47, 47);
+    font-size: 3.1vw;
+    font-weight: 450;
+    letter-spacing: 0.4vw;
+}
+
+.navbar .logo a:hover {
+    font-weight: 550;
+    letter-spacing: 0.20vw;
+    text-decoration: none;
+}
+
+.navbar.sticky .logo a:hover {
+    font-weight: 450;
+    letter-spacing: 0.4;
+    text-decoration: none;
+}
+
+.navbar .logo span {
+    color: rgb(88, 80, 80);
+}
+
+.navbar .menu button {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: 45%;
+}
+
+.navbar .menu button {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-left: 1.5vw;
+    width: 8vw;
+    height: 3vw;
+    transition: color 0.4s ease-out;
+}
+
+.navbar .menu button:hover {
+    text-decoration: none;
+    color: rgb(102, 100, 100);
+}
+/* Home page styling begins here */
+#home{
+    background-image: url("homepic.jpg");
+    position: relative;
+    bottom: .5vw;
+    height: 73vw;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .home-content p{
+    background-color: rgba(240, 255, 255, 0.28);
+    font-size: 2.3vw;
+    color: rgb(255, 166, 0);
+    text-align: center;
+    position: relative;
+    top: 17vw;
+}
+.home .product{
+    display: inline-flex;
+}
+.home .product .container{
+    border: 1.5px solid khaki;
+    background: rgba(240, 230, 140, 0.25);
+    width: 25vw;
+    height: 25vw;
+    margin-left: 1.4vw;
+    position: relative;
+    top: 22vw;
+    left: 1.4vw;
+}
+.home .product .container .image{
+    width: 24vw;
+    height: 24vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1.3vw;
+}
+.home .product .container a .overlay:hover{
+    color: rgb(255, 181, 44);
+}
+
+.home .product .container a:hover {
+    text-decoration: none;
+}
+.home .product .container .overlay {
+    position: relative;
+    bottom: 4.3vw;
+    right: 1vw;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 24vw;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+}
+.home .product .container:hover .overlay {
+    opacity: 1;
+}
+.home .product .container p{
+    text-align: center;
+    position: relative;
+    bottom: 3vw;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(102, 66, 0);
+}
+.home .home-content p a{
+    color: rgb(187, 125, 11);
+    cursor: pointer;
+    font-weight: 700;
+    transition: color 0.4s ease-out;
+}
+
+.home .home-content p a:hover{
+    font-weight: 750;
+    font-size: 2.5vw;
+}
+
+/* The about me styling starts here */
+
+.about{
+    background: wheat;
+    height: 70vw;
+}
+.about .about-content{
+    display: flex;
+    background: rgba(255, 174, 23, 0.163);
+    position: relative;
+    top: 12vw;
+}
+.about .about-content .text .tittle{
+    position: relative;
+    top: 7vw;
+    font-size: 4vw;
+    font-weight: 650;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about .about-content .text p{
+    position: relative;
+    top: 13vw;
+    font-size: 1.4vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about .about-content .image img{
+    width: 40vw;
+    height: 100%;
+}
+.about .about-content .image{
+    height: 50vw;
+    width: 100%;
+}
+
+/* The styling of the footer begins here */
+.footer{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.footer .content{
+    display: inline-flex;
+    color: blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer .content .links li{
+    list-style: none;
+    position: relative;
+    left: 4vw;
+    margin-top: 0.8vw;
+}
+.footer .content .links li a {
+    color: rgb(255, 166, 0);
+    font-size: 1.6vw;
+    font-weight: 600;
+    letter-spacing: .2vw;
+    transition: all 0.5 ease;
+}
+
+.footer .content .links li a:hover{
+    text-decoration: wavy;
+    color: rgba(255, 166, 0, 0.8);
+}
+.footer .content iframe{
+    width: 50vw;
+    height: 16vw;
+    position: relative;
+    left: 30.6vw;
+    top: .3vw;
+}
+
+/* Contact form styling */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 0.1vw solid rgb(100, 100, 100);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #ff8800;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.5 ease;
+}
+input[type=submit]:hover {
+    background-color: #ce822b;
+}
+
+/* Style the container */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f20c;
+    padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Shopping styling begins here*/
+
+.shop{
+    height: 125vw;
+}
+.shop .product{
+    display: inline-flex;
+    position: relative;
+    bottom: 21vw;
+}
+.shop .product .container{
+    border: 1.5px solid khaki;
+    background: rgba(240, 230, 140, 0.25);
+    width: 29vw;
+    height: 29vw;
+    margin-left: 1.4vw;
+    margin-top: 8vw;
+    position: relative;
+    top: 22vw;
+    left: 1.4vw;
+}
+.shop .product .container .image{
+    width: 28vw;
+    height: 28vw;
+    position: relative;
+    right: 1vw;
+    bottom: 1.3vw;
+}
+.shop .product .container a .overlay:hover{
+    color: rgb(255, 181, 44);
+}
+
+.shop .product .container a:hover {
+    text-decoration: none;
+}
+.shop .product .container .overlay {
+    position: relative;
+    bottom: 4.3vw;
+    right: 1vw;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 28vw;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+}
+.shop .product .container:hover .overlay {
+    opacity: 1;
+}
+.shop .product .container p{
+    text-align: center;
+    position: relative;
+    bottom: 3vw;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(102, 66, 0);
+}
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 0.1vw solid rgb(100, 100, 100);
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 4%;
+    height: 4%;
+    border-radius: 35%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
